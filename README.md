@@ -33,11 +33,11 @@
 本项目采用 MinGW-w64 (g++) 进行编译。你可以直接在 VS Code 中使用内置任务编译当前激活的 `.cpp` 文件，或手动在命令行编译：
 
 ```powershell
-# 编译
-D:/mingw64/bin/g++.exe -g 源文件.cpp -o 输出文件.exe
+# 编译(请修改.vscode中的配置为你自己本地的目录)
+.\\mingw64\\bin\\g++.exe -g 源文件.cpp -o 输出文件.exe
 
 # 运行
-./输出文件.exe
+.\输出文件.exe
 ```
 
 > 推荐使用 VS Code 的任务面板（快捷键 Ctrl+Shift+B）自动编译当前文件。
