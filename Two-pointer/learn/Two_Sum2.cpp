@@ -1,5 +1,12 @@
 #include "pch.h"
 
+/*
+    针对有序且有解的数组，使用双指针一定可以遍历到最优解。
+    对于两数之和，左右两端两个指针，如果两个指针之和小于目标值，说明应该增大两个指针之和，
+    由于数组是递增的，所以移动左指针，如果大于目标值则移动右指针，否则输出结果
+*/
+
+
 vector<int> twoSum(vector<int> &numbers, int target) {
     int l = 0, r = numbers.size() - 1, sum;
 
